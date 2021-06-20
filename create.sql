@@ -1,18 +1,18 @@
 create table publisher(
-       ID int primary key not null,
+       ID integer primary key ,
        name text,
        country text)
 ;
 
 create table books(
-       ID int primary key not null,
+       ID integer primary key ,
        title text,
        publisher integer,
        foreign key (publisher) references publisher(id))
 ;
 
 create table subjects(
-       ID int primary key not null,
+       ID integer primary key ,
        name text )
 ;
 
